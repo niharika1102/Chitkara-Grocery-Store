@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 80vw;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.sec {
+    background: #74d88b;
+    width: 35%;
+    position: absolute;
+    left:65%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.head h1 {
+    color: #78d98f;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.2em;
+}
+
+.head ul {
+    position: relative;
+    float: left;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.head ul li {
+    color: black;
+    float: left;
+    list-style: none;
+    margin: 12px 15px;
+    font-size: 1.5em;
+    
+}
+
+.head h3 {
+    color: grey;
+    text-align: center;
+    width: 100%;
+    float: left;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.login {
+    position: absolute;
+    width: 65%;
+    height: 100%;
+}
+
+.textbox {
+    box-sizing: border-box;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0em 4em;
+}
+
+form {
+    width: 50%;
+    position: relative;
+    margin: 0 auto
+}
+
+form input {
+    position: relative;
+    margin: 9px auto;
+    border: none;
+    font-size: 1.2em;
+    padding: 1em 1.3em;
+    background: #eae7e7;
+    border-radius: 6px;
+    width: 100%;
+}
+
+form button {
+    width: 70%;
+    position: relative;
+    color: white;
+    background: #74d88b;
+    border: none;
+    font-size: 1em;
+    padding: 1.3em 2em;
+    border-radius: 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 3em 0em;
+}
+
+.sec h1 {
+    font-size: 2.2em;
+
+}
+
+.sec p {   
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.sec button {
+    box-sizing: border-box;
+    border: 2px solid white;
+    color: white;
+    background: no-repeat;
+    padding: 0.9em 2em;
+    font-size: 1.2em;
+    border-radius: 40px;
+    font-weight: bolder;
+}
+
+form a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-bottom: 1px solid black;
+    text-align: center;
+    margin: 2em;
+}
+
+#b {
+    background: none;
+    padding: 0;
+    margin: 1em auto;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.slide-left {
+    animation: slide-left 0.9s;
+    transition-timing-function:ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-left {
+
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+}
+
+.slide-right {
+    animation: slide-right .4s;
+    transition-timing-function:ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-right {
+
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 50%;
+    }
+
+}
+
+.slide-left2 {
+    animation: slide-left2 .4s;
+    transition-timing-function:ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-left2 {
+    
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 50%;
+    }
+
+}
+
+.movel {
+    animation: movel 1.2s;
+    transition-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movel {
+
+    from {
+        left:65%;
+    }
+
+    to {
+        left:0;
+    }
+
+}
+
+.mover {
+    animation: mover 1.2s;
+    transition-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mover {
+
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 35%;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.mover2 {
+    animation: mover2 1.2s;
+    transition-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mover2 {
+    0%{left:0;width: 35%;}
+    50%{width: 40%;}
+    100%{left:65%;width: 35%;}
+}
+
+.movel2 {
+    animation: movel2 1.2s;
+    transition-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movel2 {
+    0%{left:65%;width: 35%;}
+    50%{width: 40%;}
+    100%{left: 0;width: 35%;}
+}
+
+.sign_in_btn {
+    background-color: #78d98f;
+    cursor: pointer;
+}
+
+.sign_in_btn:hover {
+    transition: 0.3s all ease-in;
+    background-color: #9ce2ad;
+}
+
+.sign_up_btn {
+    background-color: #78d98f;
+    cursor: pointer;
+}
+
+.sign_up_btn:hover {
+    transition: 0.3s all ease-in;
+    background-color: #9ce2ad;
+}
+
+.prompt_sign_in:hover {
+    color: #eae7e7;
+    transition: 0.3s all ease-in-out;
+}
+
+.prompt_sign_up:hover {
+    color: #eae7e7;
+    transition: 0.3s all ease-in-out;
+}
+
+.fa-facebook-f:hover {
+    color: #a09999;
+    transition: 0.3s all ease-in;
+}
+
+.fa-google-plus-g:hover {
+    color: #a09999;
+    transition: 0.3s all ease-in;
+}
+
+.fa-linkedin-in:hover {
+    color: #a09999;
+    transition: 0.3s all ease-in;
+}

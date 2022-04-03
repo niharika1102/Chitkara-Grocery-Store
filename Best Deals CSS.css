@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #9ed8ab;
+}
+
+.container {
+    background-color: white;
+    width: 60%;
+    min-width: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+img {
+    position: relative;
+    width: 100%;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.dot-container {
+    width: 150px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+.dot-container button {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    border: 3px solid #58e078;
+    background-color: transparent;
+}
+
+.dot-container button:nth-child(1){
+    background-color: #58e078;
+}
+
+#prev, #next {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    background-color: #58e078;
+    color: white;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#prev {
+    left: 15px;
+}
+
+#next {
+    right: 15px;
+}

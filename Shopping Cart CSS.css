@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+	font-family: 'Poppins', sans-serif;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	background: #c8efd1;
+	overflow:hidden;
+}
+.container{
+	max-width:1200px;
+	margin: 0 auto;
+}
+.container > h1{
+	padding: 20px 0;
+}
+.cart{
+	display: flex;
+}
+.products{
+	flex: 0.75;
+}
+.product{
+	display: flex;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.product:hover{
+	border: none;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+	transform: scale(1.01);
+    transition: 0.3s all ease;
+}
+.product > img{
+	width:300px;
+	height: 200px;
+	object-fit: cover;
+}
+.product > img:hover{
+	transform: scale(1.04);
+    transition: 0.3s all ease;
+}
+.product-info{
+	padding: 20px;
+	width: 100%;
+	position: relative;
+}
+.product-name, .product-price, .product-offer{
+	margin-bottom: 20px;
+}
+.product-remove{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px 25px;
+	background-color: red;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.product-remove:hover{
+	background-color: white;
+	color: red;
+	font-weight: 600;
+	border: 1px solid red;
+}
+.product-quantity > input{
+	width: 40px;
+	padding: 5px;
+	text-align: center;
+}
+.fas{
+	margin-right: 5px;
+}
+.cart-total{
+	flex: 0.25;
+	margin-left: 20px;
+	padding:20px;
+	height: 240px;
+	border: 1.5px solid black;
+	border-radius: 10px;
+    height: 270px;
+}
+.cart-total p{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+.cart-total a{
+	display: block;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	background-color: #32b350;
+	color: white;
+	text-decoration: none;
+}
+.cart-total a:hover{
+	background-color: #74d88b;
+}
+@media screen and (max-width: 700px){
+	.remove{
+		display: none;
+	}
+	.product{
+		height: 150px;
+	}
+	.product > img{
+		height: 150px;
+		width: 200px;
+	}
+	.product-name, .product-price, .product-offer{
+		margin-bottom: 10px;
+	}
+}
+@media screen and (max-width: 900px){
+	.cart{
+		flex-direction: column;
+	}
+	.cart-total{
+		margin-left: 0;
+		margin-bottom: 20px;
+}
+@media screen and (max-width: 12220px){
+	.container{
+		max-width: 95%;
+    }
+}

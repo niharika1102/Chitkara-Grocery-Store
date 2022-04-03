@@ -1,0 +1,696 @@
+<DOCTYPE html>
+
+<html>
+
+    <head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==Title==================================-->
+    <title>
+
+        Chitkara Grocery Store
+
+    </title>
+
+    <!--==Stylesheet=============================-->
+    <link rel="stylesheet" type="text/css" href="Home Page CSS.css">
+
+    <!--==Fav-icon===============================-->
+    <link rel="shortcut icon" href="images/fav-icon.png"/>
+
+    <!--==Using-Font-Awesome=====================-->
+    <script src="https://kit.fontawesome.com/5471644867.js" crossorigin="anonymous"></script>
+
+    <script src = 'Home Page JS.js' defer></script>
+
+    </head>
+
+    <body>
+
+        <!--==Navigation================================-->
+        <nav class="navigation">
+
+            <!--logo-------->
+            <a href="#" class="logo">
+
+                <span>C</span>GS
+
+            </a>
+
+            <!--menu-btn---->
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+
+            <label for="menu-btn" class="menu-icon">
+
+                <span class="nav-icon"></span>
+
+            </label>
+
+            <!--menu-------->
+            <ul class="menu">
+
+                <li>
+                    <a href="Home Page HTML.html" class="active">
+                        
+                        Home
+
+                    </a>
+                
+                </li>
+
+                <li>
+
+                    <a href="#category">
+
+                        Categories
+                    
+                    </a>
+                
+                </li>
+
+                <li>
+
+                    <a href="#popular-bundle-pack">
+                        
+                        Packages
+                    
+                    </a>
+                
+                </li>
+
+                <li>
+                    
+                    <a href="Contact Form HTML.html">
+                        
+                        Contact&nbsp;Us
+                    
+                    </a>
+                
+                </li>
+				
+				<li>
+                    
+                    <a href="Feedback Form HTML.html">
+                        
+                        Feedback
+                    
+                    </a>
+                
+                </li>
+				
+				<li>
+
+					<a href="About Us HTML.html">
+
+						About&nbsp;us
+
+					</a>
+
+                </li>
+
+                <li>
+                    
+                    <a href="#download-app">
+                        
+                        App
+                    
+                    </a>
+                
+                </li>
+
+                <li>
+                    
+                    <a href="Login And Registration HTML.html">
+                            
+                        Sign&nbsp;up
+                        
+                    </a>
+                    
+                </li>
+
+                
+                <li>
+                    
+                    <a href="Login And Registration HTML.html">
+                        
+                        Login
+                    
+                    </a>
+                
+                </li>
+
+				</ul>
+
+            <!--right-nav-(cart-like)-->
+            <div class="right-nav">
+
+                <!--like----->
+                <a href="Wishlist HTML.html" class="like">
+
+                    <i class="fas fa-heart"></i>
+
+                    <span>
+                        
+                        2
+                    
+                    </span>
+
+                </a>
+
+                <!--cart----->
+                <a href="Shopping Cart HTML.html" class="cart">
+
+                    <i class="fas fa-shopping-cart"></i>
+
+                    <span>
+                        
+                        2
+                    
+                    </span>
+
+                </a>
+
+                <!--cart----->
+                <a href="Profile HTML.html" class="user-profile">
+
+                    <i class="fas fa-user"></i>
+
+                    <span>
+
+                        1
+
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+        <!--nav-end--------------------->
+        <!--==Search-banner=======================================-->
+        <section id="search-banner">
+
+            <!--bg--------->
+            <img alt="bg" class="bg-1" src="https://i.imgur.com/h8pXo1s.png">
+
+            <img alt="bg" class="bg-1_rev" src="https://i.imgur.com/h8pXo1s.png">
+
+            <img alt="bg-2" class="bg-2" src="https://i.imgur.com/2smuQIz.png">
+
+            <!--text------->
+            <div class="search-banner-text">
+
+                <h1>
+                    
+                    Order Your daily Groceries
+                
+                </h1>
+
+                <strong>
+                    
+                    #Free Delivery
+                
+                </strong>
+
+                <!--search-box------>
+                <form action="" class="search-box">
+
+                    <!--icon------>
+                    <i class="fas fa-search"></i>
+
+                    <!--input----->
+                    <input type="text" class="search-input" placeholder="Search" name="search" size = "80px" required>
+
+                    <!--btn------->
+                    <input type="submit" class="search-btn" value="Search">
+
+                </form>
+
+                <br>
+
+                <h3>
+
+                    <a href = 'Best Deals HTML.html' style = 'color: #40aa54'>
+
+                        Click here to learn about today's best deals
+
+                    </a>
+
+                </h3>
+
+            </div>
+
+        </section>
+
+        <!--search-banner-end--------------->
+
+        <h2 class = 'sale-heading'>
+
+            Republic Day Sale is Live For
+
+        </h2>
+
+        <div class="countdown-container">
+
+            <div class="countdown-el days-c">
+                <p class="big-text" id="days">0</p>
+                <span>Days</span>
+            </div>
+            <div class="countdown-el hours-c">
+                <p class="big-text" id="hours">0</p>
+                <span>Hours</span>
+            </div>
+            <div class="countdown-el mins-c">
+                <p class="big-text" id="mins">0</p>
+                <span>Min</span>
+            </div>
+            <div class="countdown-el seconds-c">
+                <p class="big-text" id="seconds">0</p>
+                <span>Seconds</span>
+            </div>
+        </div>
+        <!--==category=========================================-->
+        <section id="category">
+
+            <!--heading---------------->
+            <div class="category-heading">
+
+                <h2>
+                    
+                    Category
+                
+                </h2>
+
+                <span>
+                    
+                    All
+                
+                </span>
+
+            </div>
+
+            <!--box-container---------->
+            <div class="category-container">
+
+                <!--box---------------->
+                <a class="category-box" href = 'Fruits Category Page HTML.html'>
+					<img alt="Fruits and Vegetables" src="https://i.imgur.com/lvk68rp.png">
+					<span>Fruits & <br> Vegetables</span>
+				</a>
+				<!--box---------------->
+                <a class="category-box" href = 'Medicine Category Page HTML.html'>
+                    <img alt="Medicines" src="https://i.imgur.com/4sjlmg3.png">
+                    <span>Medicine</span>
+                </a>
+                <!--box---------------->
+                <a class="category-box" href="Baby Care Category Page HTML.html">
+                    <img alt="Baby Care Products" src="https://i.imgur.com/uvd01HH.png">
+                    <span>Baby Care</span>
+                </a>
+                <!--box---------------->
+                <a class="category-box" href = 'Office Category Page HTML.html'>
+                    <img alt="Fish" src="https://i.imgur.com/N5a3WUT.png">
+                    <span>Stationary</span>
+                </a>
+                <!--box---------------->
+                <a class="category-box" href = 'Beauty Category Page HTML.html'>
+                    <img alt="Beauty Products" src="https://i.imgur.com/Bm0yLex.png">
+                    <span>Beauty</span>
+                </a>
+                <!--box---------------->
+                <a class="category-box" href = 'Gardening Category Page HTML.html'>
+                    <img alt="Gardening Products" src="https://i.imgur.com/AjGulv5.png">
+                    <span>Gardening</span>
+                </a>
+            </div>
+            
+        </section>
+        <!--category-end----------------------------------->
+        <!--==Products====================================-->
+        <section id="popular-product">
+            <!--heading----------->
+            <div class="product-heading">
+                <h3>Popular Product</h3>
+                <span>All</span>
+            </div>
+            <!--box-container------>
+            <div class="product-container">
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="apple" src="https://i.imgur.com/vUJ2JKU.png">
+                    <strong>Apple</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">Rs. 100</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="chili" src="https://i.imgur.com/rFhSMZN.png">
+                    <strong>Chili</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">Rs. 80</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="apple" src="https://i.imgur.com/sGLggWL.jpg">
+                    <strong>Onion</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">Rs. 50</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="apple" src="https://i.imgur.com/WFjH6ui.png">
+                    <strong>Potato</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">Rs. 60</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="apple" src="https://i.imgur.com/XVLuy2J.png">
+                    <strong>Garlic</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">Rs. 50</span>
+                    <!--cart-btn------->
+                    <a href="#" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="apple" src="https://i.imgur.com/8l5hDhS.png">
+                    <strong>Tomato</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">Rs. 80</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--popular-product-end--------------------->
+        <!--Popular-bundle-pack===================================-->
+        <section id="popular-bundle-pack">
+            <!--heading-------------->
+            <div class="product-heading">
+                <h3>Popular Bundle Pack</h3>
+            </div>
+            <!--box-container------>
+            <div class="product-container">
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="pack" src="https://i.imgur.com/Zm8Xo2j.png">
+                    <strong>Big Pack</strong>
+                    <span class="quantity">Lemon, Tomato, Potato,+4</span>
+                    <span class="price">Rs. 500</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="apple" src="https://i.imgur.com/vMA9mRm.jpg">
+                    <strong>Large Pack</strong>
+                    <span class="quantity">Lemon, Tomato, Potato,+2</span>
+                    <span class="price">Rs. 800</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="apple" src="https://i.imgur.com/CeVqxe2.png">
+                    <strong>Small Pack</strong>
+                    <span class="quantity">Lemon, Tomato, Potato</span>
+                    <span class="price">Rs. 300</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="pack" src="https://i.imgur.com/Zm8Xo2j.png">
+                    <strong>Big Pack</strong>
+                    <span class="quantity">Lemon, Tomato, Potato,+4</span>
+                    <span class="price">Rs. 900</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="apple" src="https://i.imgur.com/vMA9mRm.jpg">
+                    <strong>Large Pack</strong>
+                    <span class="quantity">Lemon, Tomato, Potato,+2</span>
+                    <span class="price">Rs. 700</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="apple" src="https://i.imgur.com/CeVqxe2.png">
+                    <strong>Small Pack</strong>
+                    <span class="quantity">Lemon, Tomato, Potato</span>
+                    <span class="price">Rs. 400</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--popular-bundle-pack-end-------------------------------->
+        <!--==Clients===============================================-->
+        <section id="clients">
+            <!--heading---------------->
+            <div class="client-heading">
+                <h3>What Our Clients Say</h3>
+            </div>
+            <!--box-container---------->
+            <div class="client-box-container">
+                <!--box------------->
+                <div class="client-box">
+                    <!--==profile===-->
+                    <div class="client-profile">
+                        <!--img--->
+                        <img alt="client" src="https://i.imgur.com/FNVH9z6.jpg">
+                        <!--text-->
+                        <div class="profile-text">
+                            <strong>James Mcavoy</strong>
+                            <span>CEO</span>
+                        </div>
+                    </div>
+                    <!--==Rating======-->
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <!--==comments===-->
+                    <p>Chitkara Grocery Store is the best. CGS never fails to dissapoint me. Grocery shopping has become so easy with Chitkara Grocery Store.</Str></p>
+                </div>
+                <!--box------------->
+                <div class="client-box">
+                    <!--==profile===-->
+                    <div class="client-profile">
+                        <!--img--->
+                        <img alt="client" src="https://i.imgur.com/3yv9Hkj.jpg">
+                        <!--text-->
+                        <div class="profile-text">
+                            <strong>Sameer Sharma</strong>
+                            <span>Software Developer</span>
+                        </div>
+                    </div>
+                    <!--==Rating======-->
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <!--==comments===-->
+                    <p>Chitkara Grocery Store is just amazing. I can buy all my groceries from a single place. The groceries are available at very affordable prices. And, the groceries are delivered at the time slot you choose and prefer.</p>
+                </div>
+                <!--box------------->
+                <div class="client-box">
+                    <!--==profile===-->
+                    <div class="client-profile">
+                        <!--img--->
+                        <img alt="client" src="https://i.imgur.com/Rk5RDey.jpg">
+                        <!--text-->
+                        <div class="profile-text">
+                            <strong>Ava Alex</strong>
+                            <span>Marketer</span>
+                        </div>
+                    </div>
+                    <!--==Rating======-->
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <!--==comments===-->
+                    <p>At Chitkara Grocery Store, you can get fresh fruits and vegetables. And it is not only about fruits or vegetables, you can buy all kinds of stuff here.</p>
+                </div>
+            </div>
+        </section>
+        <!--client-section-end---------->
+        <!--==Partnre-logo================================-->
+        <section id="partner">
+            <!--heading------------>
+            <div class="partner-heading">
+                <h3>Our Trusted Partner</h3>
+            </div>
+            <!--logo-container----->
+            <div class="logo-container">
+                <img alt="logo" src="https://i.imgur.com/iUOPVpm.png">
+                <img alt="logo" src="https://i.imgur.com/kyp2UKO.png">
+                <img alt="logo" src="https://i.imgur.com/072qc5v.png">
+                <img alt="logo" src="https://i.imgur.com/AADIKZS.png">
+            </div>
+        </section>
+        <!--logo-section-end--------------------->
+        <!--==download-app====================================-->
+        <section id="download-app">
+            <!--img----------------------->
+            <div class="app-img">
+                <img alt="app" src="https://i.imgur.com/nxe85eq.png">
+            </div>
+            <!--text---------------------->
+            <div class="download-app-text">
+                <strong>Download App</strong>
+                <p>Grocery shopping made easier. Now, you don't need to open the website for placing orders. Download the <b>Chitkara Grocery Store</b> app from Play Store and App Store to start shopping easily and faster. <br> HAPPY SHOPPING!</b></p>
+                <!--btns------->
+                <div class="download-btns">
+                    <a href="https://www.apple.com/in/app-store/"><img alt="" src="https://i.imgur.com/dMsRGJH.png"></a>
+                    <a href="https://play.google.com/store"><img alt="" src="https://i.imgur.com/puDrZNe.png"></a>
+                </div>
+            </div>
+        </section>
+        <!--download-app-section-end------------------------->
+        <!--==Footer=============================================-->
+        <footer>
+            <div class="footer-container">
+                <!--logo-container------>
+                <div class="footer-logo">
+                    <a href="file:///C:/Users/RAGHAV/Desktop/Coding/Grocery/Logo.png"><span>C</span>GS</a>
+                    <!--social----->
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/?lang=en-in"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!--links------------------------->
+            <div class="footer-links">
+                <strong>Product</strong>
+                <ul>
+                    <li><a href="#">Grocery</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">New</a></li>
+                </ul>
+            </div>
+            <!--links------------------------->
+            <div class="footer-links">
+                <strong>Category</strong>
+                <ul>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Vegetables</a></li>
+                    <li><a href="#">Baby</a></li>
+                    <li><a href="#">Medicine</a></li>
+                </ul>
+            </div>
+            <!--links-------------------------->
+            <div class="footer-links">
+                <strong>Contact</strong>
+                <ul>
+                    <li><a href="#">Phone : +123456789</a></li>
+                    <li><a href="#">Email : chitkaragrocery@gmail.com</a></li>
+                    <li><a href="#">Cities we serve</a></li>
+                </ul>
+				<br><p style="color: aliceblue;">Copyright ©2022 | All Rights Reserved</p>
+            </div>
+            </div>
+        </footer>
+    </body>
+</html>

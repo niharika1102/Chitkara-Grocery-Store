@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body{
+      background: #c8efd1;
+  }
+
+  .wrapper{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      max-width: 350px;
+      background: #fff;
+      padding: 25px;
+      border-radius: 5px;
+      box-shadow: 4px 4px 2px rgba(254, 236, 164, 1);
+  }
+
+  .wrapper h2{
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #332902;
+  }
+
+  .wrapper .input_field{
+    margin-bottom: 10px;
+  }
+
+  .wrapper .input_field input[type="text"],
+  .wrapper textarea{
+      border: 1px solid #e0e0e0;
+      width: 100%;
+      padding: 10px;
+      border-radius: 20px;
+  }
+
+  .wrapper .btn input[type="submit"]{
+      border: 0px;
+      margin-top: 15px;
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+      background: #fece0c;
+      color: #332902;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-weight: bold;
+      border-radius: 25px;
+      cursor: pointer;
+  }
+
+  #error_message{
+      margin-bottom: 20px;
+      background: #fe8b8e;
+      padding: 0px;
+      text-align: center;
+      font-size: 14px;
+      transition: all 0.5s ease;
+  }
+
+  .btn {
+    border-radius:20px;
+	color:#fff;
+	margin-top:18px;
+	padding:10px;
+	background-color:#4ccd6a;
+	font-size:15px;
+	border:none;
+	cursor:pointer;
+    font-weight: 1000px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .btn:hover {
+      color:#78d98f;
+      opacity: 0.8;
+      transition: 0.3s all ease-in;
+  }
